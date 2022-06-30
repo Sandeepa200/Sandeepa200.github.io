@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arugam Bay</title>
+
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="places.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="https://indyguide-web-development.s3.us-east-2.amazonaws.com/listings/images/thumbnail/Arugam-Bay-With-Beach-Experience-1608627534165.webp" alt="Arugam Bay Beach">
+        </div>
+        <div class="descript">
+            <h1>
+                Arugam Bay Beach 
+            </h1>
+            <p>
+                Arugam bay is a surf beach which is located 314 km away from Colombo in the Ampara District where it’s 
+                a Dry zone area of Sri Lanka. This is a place where it is Very nice to walk by the beach and see the 
+                fishermen return back. Tourists from all over the world come here to do surfing and this is known to 
+                be surfer’s paradise. <br><br>
+                The best time to visit Arugam Bay would be during the months of May to September when the monsoons 
+                have descended. <br><br>
+                In order to travel Arugam Bay the closest airport is the Batticaloa Airport and also can have a 
+                bus ride which is about 9 hours or hire a taxi or rent a car and drive from any part of Sri Lanka 
+                which is about 8 hours tour.
+
+                <br><br><a href="https://en.wikipedia.org/wiki/Arugam_Bay">click here for more details</a><br><br>
+            </p>
+        </div>
+        <div class="hotels">
+            <h1>Nearest Hotels</h1>
+            <ul>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/jetwing-surf.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=900050039&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=bb752836c7bf0182&srepoch=1641102191&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Jetwing Surf</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/the-spice-trail.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=900050039&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=bb752836c7bf0182&srepoch=1641102191&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>The Spice Trail</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/the-blue-wave.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=900050039&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=bb752836c7bf0182&srepoch=1641102191&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>The Blue Wave Hotel</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/kottukal-beach-house-by-jetwing.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=900050039&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=bb752836c7bf0182&srepoch=1641102191&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Kottukal Beach House by Jetwing</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/arugambay-roccos.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=900050039&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=bb752836c7bf0182&srepoch=1641102191&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Arugambay Roccos</h3></a>
+                </li>
+            </ul>
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.booking.com"><img src="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg" alt="Booking.com"></a></li>
+                    <li><a href="https://www.tripadvisor.com"><img src="https://orleanscapecod.org/wp-content/uploads/2020/04/Tripadvisor.png" alt="Trip Advisor"></a></li>
+                    <li><a href="https://www.google.com/travel/"><img src="https://ssl.gstatic.com/travel-frontend/images/travel_logo_200.png" alt="Google Travel"></a></li>
+                    <li><a href="https://www.jetwingtravels.com"><img src="https://www.transcielos.com/wp-content/uploads/2018/08/Jetwing-travels.png" alt="Jetwing Travels"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=arugam%20bay&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+        </div>   
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>

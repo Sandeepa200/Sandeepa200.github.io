@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        header{
+            min-height: 100vh;
+            background-image: url(about.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .headbody{
+            position: relative;
+            display: block;
+            float: left;
+
+        }
+        .headbody img{
+            width: 200px;
+            border-radius: 60%;
+            border: 2px solid red;
+            box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            margin: 110px 0px 0px 190px;
+            padding: 2px;
+        }
+        .headbody h1{
+            color: chartreuse;
+            margin: 0px 0px 5px 100px;
+            font-size: 60px;
+        }
+        .headbody h2{
+            color: rgb(255, 42, 5);
+            margin: 0px 0px 5px 100px;
+            font-size: 30px;
+        }
+        .headbody p{
+            color: rgb(253, 27, 151);
+            margin: 0px 0px 5px 100px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+        <div class="headbody">
+            <img src="mypic.jpg" alt="author image">
+            <h1>Hi..</h1>
+            <h2>I'm Sandeepa Rambukwella</h2>
+            <p>I'm the author of this website and this is for Mini project of the course Web Application Development 
+                Bachelor of Software Engineering Honours degree (BSE) at Open University Sri Lanka. this website about 
+                the tourist places of Sri Lanka. From this website you can simply find your favourite travel destination 
+                and book your favourite hotel through booking.com. In addition there is a to-do list to plan your own trip.
+                <br> Thank You!
+            </p>
+        </div>
+
+    </header>
+    <div>
+
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

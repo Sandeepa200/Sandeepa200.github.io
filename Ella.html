@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella - Sri Lanka</title>
+
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="places.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="https://destinationlesstravel.com/wp-content/uploads/2019/05/DSC_9600-1-1024x684-1024x684.jpg" alt="Ella Sri Laanka">
+        </div>
+        <div class="descript">
+            <h1>
+                Ella 
+            </h1>
+            <p>
+                Ella is a perfect travelling destination in Sri Lanka that sense a super friendly people, a huge diversity of nature and incredible food.
+                There are some places to add into your list to visit in Ella.<br><br>
+                
+                <strong>Mini Adams peak</strong> <br><br>
+                This is the closest and easiest hike in Ella. This is situated 2km away from Ella Namunukula Road and many foreign and local tourists prefer to 
+                hike and trail along this mountain. You would absolutely love the experience throughout the journey. The view from the summit are incredible and 
+                can get 360 degrees panoramic views with clouds rolling in. It is 1141 m in height and from the entrance it takes up to 30-45 min for the hike.
+                <br><br>
+                <strong>Ella Rock</strong><br><br>
+                Ella rock is of the place that you can get some dashing panoramic views in Sri Lanka. Hence this should be on your bucket list. 
+                This sounds like a long journey but it is about 4 hours of total time for climbing up and down. The way up to the rock is with 
+                full of diversity as soon as you started climbing up, you will be passing a waterfall, the rubber tree forest and tea plantations.
+                <br><br>
+
+                <strong>Nine Arch Bridge</strong><br><br>
+                The glorious Nine Arch Bridge between Ella and Demodara train stations is one of the engineering marvels in the early 20th century. 
+                The best time to be there is when the train is passing. So it is better to check the train schedule before you starts your journey.
+                <br><br>
+                <strong>Ravana falls</strong><br><br>
+                Ravana Falls is another must visit in Ella. The falls is a part of the Ravana Ella Wildlife Sanctuary, and is located 6 km away from 
+                Ella Railway station.  Hill country of Sri Lanka is quite popular for beautiful waterfalls and Ravana Falls is right at the top.
+                <br><br>
+                <strong>Watawala tea state</strong> <br><br>
+                This is a village in Sri Lanka that is located within the Central Province. The train journey from Ella to Kandy falls via this beautiful village along with tea plantation through Sri Lanka's Hill Country. This takes about 6-7 hours in total. For sure this will be a greatest train journeys in the world.
+                <br><br><a href="https://en.wikipedia.org/wiki/Ella,_Sri_Lanka">click here for more details</a><br><br>
+            </p>
+        </div>
+        <div class="hotels">
+            <h1>Nearest Hotels</h1>
+            <ul>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/chille-ville-view-point.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2216722&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=5f80103074fd0095&srepoch=1641089889&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Chill Ville, View Point Hotel</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/green-hill.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2216722&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=5f80103074fd0095&srepoch=1641089889&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Green Hill</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/countryhomes.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2216722&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=5f80103074fd0095&srepoch=1641089889&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Country Homes</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/zion-view.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2216722&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=5f80103074fd0095&srepoch=1641089889&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Zion View Ella Green Retreat</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/morning-dew.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2216722&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=5f80103074fd0095&srepoch=1641089889&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Morning Dew Hotel</h3></a>
+                </li>
+            </ul>
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.booking.com"><img src="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg" alt="Booking.com"></a></li>
+                    <li><a href="https://www.tripadvisor.com"><img src="https://orleanscapecod.org/wp-content/uploads/2020/04/Tripadvisor.png" alt="Trip Advisor"></a></li>
+                    <li><a href="https://www.google.com/travel/"><img src="https://ssl.gstatic.com/travel-frontend/images/travel_logo_200.png" alt="Google Travel"></a></li>
+                    <li><a href="https://www.jetwingtravels.com"><img src="https://www.transcielos.com/wp-content/uploads/2018/08/Jetwing-travels.png" alt="Jetwing Travels"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ella%20sri%20lanka&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+        </div>   
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>

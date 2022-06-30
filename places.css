@@ -1,0 +1,72 @@
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+.image{
+    width: 60%;
+    margin: 100px auto 20px auto;
+}
+img {
+    width: 100%;
+}
+.descript h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.descript p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 25px;
+}
+.map{
+    margin: 30px 0px 30px 30px;
+    float: right;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+.hotels{
+    margin-top: 80px;
+    width: 45%;
+    float: left;
+}
+.hotels h3{
+    color: blue;
+}
+.hotels h3:hover{
+    color: rgb(0, 255, 55);
+}
+.hotels a{
+    text-decoration: none;
+    width: 100%;
+}
+.hotels ul li{
+    margin: 30px 0px 0px 50px;
+}
+.icons{
+    width: 63%;
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    
+}
+.icons ul li{
+    text-decoration: none;
+    display: inline;
+    margin: 15px;
+    
+}
+.icons ul li img{
+    width: 50px;
+    transition: 0.4s;
+}
+.icons ul li img:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
+}

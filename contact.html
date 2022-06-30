@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .header{
+            min-height: 70vh;
+            background-image: url(Contact-us.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .cbody{
+            background-color: rgb(59, 58, 58);
+            height: 40em;
+            display: flex;
+        }
+        .cform{
+            position: relative;
+            width: 50%;
+            display: block;
+            background-color: rgb(153, 37, 37);
+            
+        
+        }
+        .frm {
+            width: 450px;
+            margin: auto;
+            padding: 40px;
+            
+        }
+        .name, .sname, .mail, textarea{
+            display: flex;
+            margin: 20px auto auto auto;
+            padding: 10px 10px;
+            border-radius: 4px;
+            background-color: rgb(32, 32, 32);
+            border: 0px;
+
+           
+        }
+        .mail{
+            width: 350px;
+            color: white;
+        }
+        textarea{
+            width: 350px;
+            height: 200px;
+            color: white;
+        }
+        .name, .sname {
+            display: inline;
+            position: relative;
+            width: 150px;
+            margin-top: 0px;
+            color: white;
+        }
+        .name{
+            margin-left: 40px;
+            
+        }
+        .sname{
+            margin-left: 25px;
+            
+        }
+        
+        .subtn{
+            display: block;
+            color: white;
+            border: 2px solid white;
+            background-color: transparent;
+            font-weight: 600;
+            width: 350px;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 10px;
+            border-radius: 4px;
+        }
+        h1{
+            padding-top: 80px;
+            text-align: center;
+            color: white;
+        }
+        .subtn:hover{
+            color: black;
+            background-color: white;
+            
+        }
+        .cmedia i{
+            color: white;
+            font-size: 40px;
+            display: block;
+            margin: 50px 20px 20px 20px;
+
+        }
+        .cmedia p {
+            color: white;
+            font-size: 15px;
+            margin: 60px 20px 20px 20px;
+            
+        }
+        .cmedia{
+            display: flex;
+            margin: 50px auto 20px auto;
+            
+            
+        }
+        .icn{
+            margin: 20px 20px 20px 20px;
+            border-right: 2px solid white;
+        }
+        .md{
+            margin: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html" >ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+    </div>
+    <div class="cbody">
+        <div class="cform">
+            <h1>Chat with Us</h1>
+            <form class="frm">
+                <input class="name" type="text" name="fname" placeholder="Enter your first name...">
+                <input class="sname" type="text" name="lname" placeholder="Enter your last name...">
+                <input class="mail" type="text" name="email" placeholder="Enter your email address here...">
+                <textarea class="tarea" type="text" name="message" placeholder="Enter your message here..."></textarea>
+                <button class="subtn" onclick="alertbox()" type="submit" >Submit</button>
+            </form>
+        </div>
+        <div class="cmedia">
+            <div class="icn">
+              <i class="fas fa-envelope"></i>
+              <i class="fas fa-phone-alt"></i> 
+              <i class="fas fa-map-marker-alt"></i> 
+            </div>
+            <div class="md">
+               <p>s92060506@gmail.com</p>
+                <p>0783863533</p>
+                <p>No.4546, <br>temple road,<br>Kandy.</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>

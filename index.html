@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Sri Lanka</title>
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body >
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+        <div class="head-text">
+            <h3 class="head_h3">Make Your Good Vacation</h3>
+            <h1 class="head_h1">A GREAT One</h1>
+            <p class="head_p">Feel the Sri Lanka's best hospitality with Enchanting aesthetics of nature.</p>
+            <a href="places.html"> <button class="head-button" type="button">Start your Journey</button> </a>
+        </div>
+    </header>
+    
+    <div class="places">
+            <h1 class="place_h1">Featured Places</h1>
+            <div class="place_row1">
+                <div class="row1">
+                    <a href="ArugamBay.html" ><img class="rowpic" src="img-1.jpg" alt="ArugamBay image"></a>
+                    <h3 class="show">Arugam Bay</h3>
+                    <p class="show"> This is a Sri Lanka's best beach for surfing activies. So Iif you are a surfing lover this is the best place to visit in Sri Lnka
+                    </p>
+                </div>
+                <div class="row1">
+                    <a href="colombo.html" ><img class="rowpic" src="https://sprudge.com/wp-content/uploads/2020/01/colombo-sklyine-4-Colombo.jpg" alt="colombo city image"></a>
+                    <h3 class="show">Colombo city</h3>
+                    <p class="show">This is the Capital of Sri Lanka. Most of the luxurious hotels situated in Colombo. In addition many water related activities and parks are in there. If you want to spend luxurious vacation come to Colombo. 
+                    </p>
+                </div>
+                <div class="row1">
+                    <a href="ambuluwawa.html" ><img class="rowpic" src="https://www.bluelankatours.com/wp-content/uploads/2019/07/Sneak-peek-of-Sri-Lanka-01.jpg"></a>
+                    <h3 class="show">Ambuluwawa</h3>
+                    <p class="show">This is very beautiful tower with marvelous view. If you love to climb sky catching towers this is the place you must visit. 
+                    </p>
+                </div>
+            </div>
+            <div class="place_row2">
+                <div class="row2">
+                    <a href="yala.html"><img class="rowpic" src="https://lavendishleisure.com/wp-content/uploads/2021/04/LL-YNP-IMG04.jpg" alt="Yala image"></a>
+                    <h3 class="show">Yala National Park</h3>
+                    <p class="show">This is the second Biggest National Park in Sri Lanka. vary famous for Sri Lankan leopards, elephants, and birds. If you are a animal lover this is place you shouldn't miss.
+                    </p>
+                </div>
+                <div class="row2">
+                    <a href="hikkaduwa.html"><img class="rowpic" src="https://www.planetware.com/wpimages/2020/01/sri-lanka-best-places-to-visit-hikkaduwa-beach.jpg" alt="Hikkaduwa Beach image"></a>
+                    <h3 class="show">Hikkaduwa Beach</h3>
+                    <p class="show">This is also one of Sri Lanka's best beaches. Very famous for scuba diving, delicious seafood curries, relaxing massages. So if you want to see the beautiful seebed with tasting some delicious see food curry you are in the right place!
+                    </p>
+                </div>
+                <div class="row2">
+                    <a href="templeofthetooth.html"><img  class="rowpic" src="https://www.archaeology.lk/wp-content/uploads/2020/11/temple-sacred-tooth-relic-kandy-sri-lanka-1068x708.jpg" alt="temple of the tooth image"></a>
+                    <h3 class="show">Temple of the tooth Relic</h3>
+                    <p class="show">This is the heart of the buddist people in Sri Lanka. The speciality you can worship to the tooth relic of loard Budda in there if you like to see ancient buddist tempels, this is very special place you should visit.
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="SLdetails">
+        <div class="SLimage">
+            <img src="https://blog.exposition.lk/wp-content/uploads/2021/02/welcome.jpg" alt="image ayubowan">
+        </div>
+        <div class="SLdata">
+            <h1>Sri Lanka</h1>
+            <h2>"The Pearl of the Indian Ocean"</h2>
+            <p>
+                Sri Lanka then known as Ceylon, and officially the Democratic Socialist Republic of Sri Lanka, 
+                is an island nation in South Asia. It is found in the Indian Ocean, southwest of the Bay of Bengal, 
+                and southeast of the Arabian Sea; separated from the Indian subcontinent by the Gulf of Mannar and 
+                thealk Strait. Sri Lanka shares a maritime border with India and the Maldives. Sri Jayawardenepura 
+                Kotte is its legal capital, and Colombo is a major city and financial center.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>

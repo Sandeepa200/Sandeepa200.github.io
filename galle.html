@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galle</title>
+
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="places.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="https://www.tripsavvy.com/thmb/3Kq2W0jljtIalHo7Z70Kn53NuiI=/2121x1414/filters:fill(auto,1)/GettyImages-520870128-1c1f8305c37949ab967d13de38ddf9eb.jpg" alt="Galle Sri Lanka">
+        </div>
+        <div class="descript">
+            <h1>
+                Galle Sri Lanka 
+            </h1>
+            <p>
+                This is situated in the southwest of Sri Lanka about 100 km south of Colombo, the city of 
+                Galle is on the shores of the Indian Ocean. This was built by the Dutch in 1663. Galle 
+                features a tropical rainforest climate which is around 26 °C (79 °F). Galle is served by 
+                Sri Lanka costal line railway and connected by rail to Colombo and Matara and also road 
+                transport is also available. Galle is a World Heritage Site as this consists of Dutch-colonial 
+                buildings, ancient mosques and churches, grand mansions, museums etc. 
+
+                <br><br><a href="https://en.wikipedia.org/wiki/Galle">click here for more details</a><br><br>
+            </p>
+        </div>
+        <div class="hotels">
+            <h1>Nearest Hotels</h1>
+            <ul>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/wirdana-spa-amp-villas-galle.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2217578&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=f96c3418f1c6024f&srepoch=1641108274&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Wirdana Resort & Spa</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/le-grand-galle.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2217578&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=f96c3418f1c6024f&srepoch=1641108274&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Le Grand Galle By Asia Leisure</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/the-bartizan.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2217578&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=f96c3418f1c6024f&srepoch=1641108274&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>The Bartizan Galle Fort</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/amari-galle.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2217578&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=f96c3418f1c6024f&srepoch=1641108274&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Amari Galle</h3></a>
+                </li>
+                <li>
+                    <a href="https://www.booking.com/hotel/lk/jetwing-lighthouse.en-gb.html?label=operasoft-sdO15-343336&sid=de408a4d357b51bb17833c1f6a985f96&aid=343336&ucfs=1&arphpl=1&dest_id=-2217578&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=f96c3418f1c6024f&srepoch=1641108274&from=searchresults#hotelTmpl" target="_blank">
+                    <h3>Jetwing Lighthouse</h3></a>
+                </li>
+            </ul>
+            <div class="icons">
+                <ul>
+                    <li><a href="https://www.booking.com"><img src="https://iconape.com/wp-content/files/re/43583/svg/bookingcom-1.svg" alt="Booking.com"></a></li>
+                    <li><a href="https://www.tripadvisor.com"><img src="https://orleanscapecod.org/wp-content/uploads/2020/04/Tripadvisor.png" alt="Trip Advisor"></a></li>
+                    <li><a href="https://www.google.com/travel/"><img src="https://ssl.gstatic.com/travel-frontend/images/travel_logo_200.png" alt="Google Travel"></a></li>
+                    <li><a href="https://www.jetwingtravels.com"><img src="https://www.transcielos.com/wp-content/uploads/2018/08/Jetwing-travels.png" alt="Jetwing Travels"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Galle%20Dutch%20Fort&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+        </div>   
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <!--js file-->
+    <script src="index.js"></script>
+
+    <!--css file-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        header{
+            min-height: 80vh;
+            background-image: url(https://www.lovesrilanka.org/wp-content/uploads/2019/09/Beach-Holidays-1920x700.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .content{
+            width: 90%;
+            margin: 50px auto 50px auto;
+        }
+        .roww{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .card{
+            position: relative;
+            width: 32.5%;
+            height: 400px;
+            margin: 50px;
+            box-shadow: 0px 0px 25px 0px rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .placepic {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .tagname{
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+        .tagname:hover{
+            background:rgba(206, 176, 3, 0.568);
+            transition: 0.5s; 
+        }
+        .tagname h2{
+            width: 100%;
+            font-weight: 600;
+            color: white;
+            font-size: 26px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .tagname:hover h2{
+            opacity: 1;
+            bottom: 49%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <div id="searchOverlay" class="overlay">
+            <span class="closebtn" id="closex" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input id="sbar" type="text" placeholder="Search.." name="search">
+                <button id="sbtn" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav id="navbartop">
+            <a href="index.html"><img class="logo_pic" id="logo" src="logo.jpg" alt="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="todo.html">TO-DO LIST</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+                </ul>  
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="roww">
+            <div class="card">
+                <img class="placepic" src="https://thesrilankanguideline.com/wp-content/uploads/2020/02/82371919_119628919586049_7754668127351626635_n-819x1024.jpg" alt="Sigiriya image">
+                <div class="tagname">
+                    <a href="Sigiriya.html" target="_blank" ><h2>Sigiriya<br><br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://i.pinimg.com/originals/4d/5f/91/4d5f91a1e361bf5045a6018c0a95bbad.jpg" alt="temple of the tooth image">
+                <div class="tagname">
+                    <a href="templeofthetooth.html" target="_blank"><h2>Temple of the Tooth Relic<br><br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://thesurferweligama.com//images/mirissa-beach.jpg" alt="mirissa image">
+                <div class="tagname">
+                    <a href="mirissa.html" target="_blank"><h2>Mirissa Beach<br><br>click here</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="roww">
+            <div class="card">
+                <img class="placepic" src="https://www.srilankawidetours.com/wp-content/uploads/2019/05/image.jpg" alt="ArugamBay image">
+                <div class="tagname">
+                    <a href="ArugamBay.html" target="_blank"><h2>Arugam Bay<br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://static.toiimg.com/photo/77056925.cms" alt="ella image">
+                <div class="tagname">
+                    <a href="Ella.html" target="_blank"><h2>Ella <br><br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://i.pinimg.com/originals/cd/aa/67/cdaa67feea9961d2cb334ec8820b810f.jpg" alt="Yala image">
+                <div class="tagname">
+                    <a href="yala.html" target="_blank"><h2>Yala National Park Sri Lanka<br><br>click here</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="roww">
+            <div class="card">
+                <img class="placepic" src="https://saltinourhair.com/wp-content/uploads/2016/11/galle-dutch-fort-sri-lanka-lighthouse.jpg?x97881" alt="Galle image">
+                <div class="tagname">
+                    <a href="galle.html" target="_blank"><h2>Galle Sri Lanka<br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://media-cdn.tripadvisor.com/media/photo-s/16/db/8e/fb/adam-s-peak-is-a-2-243.jpg" alt="adams peek image">
+                <div class="tagname">
+                    <a href="Adam.html" target="_blank"><h2>Adams peek<br><br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Hikkaduwa_beach_SL.jpg" alt="Hikkaduwa Beach">
+                <div class="tagname">
+                    <a href="hikkaduwa.html" target="_blank"><h2>Hikkaduwa Beach<br><br>click here</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="roww">
+            <div class="card">
+                <img class="placepic" src="https://images.unsplash.com/photo-1623595289196-007a22dd8560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="gangaramaya colombo">
+                <div class="tagname">
+                    <a href="colombo.html" target="_blank"><h2>Colombo city<br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://youimg1.tripcdn.com/target/100h10000000oc5jdFF4D_C_300_10000.jpg" alt="Horton Plains National Park image">
+                <div class="tagname">
+                    <a href="hortan.html" target="_blank"><h2>Horton Plains National Park <br><br>click here</h2></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="placepic" src="https://api.travelql.com/images/5fe1d361-9273-4e70-9088-09bfbd117779.webp" alt="ambuluwawa image">
+                <div class="tagname">
+                    <a href="ambuluwawa.html" target="_blank"><h2>Ambuluwawa tower<br><br>click here</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="Qlinks">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="places.html">PLACES</a>
+            <a href="todo.html">TO-DO LIST</a>
+            <a href="contact.html">CONTACT US</a>
+        </div>
+        <div class="s_media">
+            <h3>follow me on</h3>
+            <a href="https://www.facebook.com"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/Sandeeparam"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sandeepa-rambukwella"> <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="end">
+            <p>created by <span>Sandeepa Rambukwella</span>|all rights reserved! </p>
+        </div>
+    </footer>
+</body>
+</html>
